@@ -23,8 +23,13 @@ const questions = [
   },
 ];
 
-const question1 = document.getElementById("q1");
-const question2 = document.getElementById("q2");
-const question3 = document.getElementById("q3");
+const questionList = document.getElementById("questionList"); // this assigns the html element "questionList to a JS variable of the same name"
 
-function importQuestion(questions) {}
+function importQuestion(questions) {
+  // this doesn't work, sorry!
+  const li = document.createElement("li");
+  li.innterText = questions;
+  list.appendChild(li);
+}
+
+questions.forEach(importQuestion); // iterates over the question array and runs the function for each object in the array
